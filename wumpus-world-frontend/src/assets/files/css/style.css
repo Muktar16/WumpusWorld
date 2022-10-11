@@ -1,0 +1,23 @@
+body {
+    margin: 30px;
+}
+
+.mboard, .pboard {
+    background-color: #d45219;
+}
+
+.mboard td, .pboard td {
+    background-color: #8cb2b3;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+}
+
+.pboard {
+    float: right;
+}
+
+.mboard {
+    float: left;
+}
+
