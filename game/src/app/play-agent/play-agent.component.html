@@ -1,0 +1,98 @@
+<div class="gameOver" [ngStyle]="{'visibility': gameOver? 'visible':'hidden'}">
+    <h3 id="over">{{gameOverLine}}</h3>
+</div>
+<div class="high">
+    <div class="topnav">
+        <a class="active" >Wumpus World</a>
+       
+      </div> 
+
+       
+<div class="main">
+    
+  
+        <!-- <div class="knowThings">
+            <div class="knowInd">
+                <img class="know" src="../../assets/images/knowWumpus.png../../assets/images/knowWumpus.png">
+                <h4 class="knowText">Wumpus</h4>
+            </div>
+            <div class="knowInd">
+                <img class="know" src="../../assets/images/knowGold.png">
+                <h4 class="knowText">Gold</h4>
+            </div>
+            <div class="knowInd">
+                <img class="know" src="../../assets/images/knowPit.png">
+                <h4 class="knowText">Pit</h4>
+            </div>
+            <div class="knowInd">
+                <img class="know" src="../../assets/images/knowStench.png">
+                <h4 class="knowText">Stench</h4>
+            </div>
+            <div class="knowInd">
+                <img class="know" src="../../assets/images/knowBreeze.png">
+                <h4 class="knowText">Breeze</h4>
+            </div>
+        </div> -->
+
+
+
+<!-- 
+        <div class="collected">
+            <h4 class="collectedLines">Gold Collected: {{discoveredGold}}</h4>
+            <h4 class="collectedLines">Wumpus Killed: {{wumpusKilled}}</h4>
+        </div>
+    
+    </div> -->
+
+
+    <div class="boardBG"><img src = "../../assets/images/agnesHorse.jpg"></div>
+   
+    <div class ="high"> <div class="boardBG">
+        <div class="board">
+            <div class="tiles" *ngFor="let in of counter(10); let column = index">
+                <div class="tiles" *ngFor="let in of counter(10); let row = index">
+                    <div class="doors" *ngIf="checkDoorState(row,column)==='notvisited'">
+                        <img class="agent" src="../../assets/images/agnes-play.png"
+                            *ngIf="checkWhereAgentIs(row,column)">
+                    </div>
+                    <div class="visitedDoors" *ngIf="checkDoorState(row,column)==='safe'">
+                        <img class="agent" src="../../assets/images/agnes-play.png"
+                            *ngIf="checkWhereAgentIs(row,column)">
+                    </div>
+
+                    <div class="visitedWumpusDoors" *ngIf="checkDoorState(row,column)==='dead'">
+                        <img class="agent" src="../../assets/images/agnes-play.png"
+                            *ngIf="checkWhereAgentIs(row,column)">
+                    </div>
+
+                    <div class="visitedStenchDoors" *ngIf="checkDoorState(row,column)==='stench'">
+                        <img class="agent" src="../../assets/images/agnes-play.png"
+                            *ngIf="checkWhereAgentIs(row,column)">
+                    </div>
+                    <div class="visitedBreezeDoors" *ngIf="checkDoorState(row,column)==='breeze'">
+                        <img class="agent" src="../../assets/images/agnes-play.png"
+                            *ngIf="checkWhereAgentIs(row,column)">
+                    </div>
+                    <div class="visitedPitDoors" *ngIf="checkDoorState(row,column)==='pit'">
+                        <img class="agent" src="../../assets/images/agnes-play.png"
+                            *ngIf="checkWhereAgentIs(row,column)">
+                    </div>
+                    <div class="visitedGoldDoors" *ngIf="checkDoorState(row,column)==='gold'">
+                        <img class="agent" src="../../assets/images/agnes-play.png " 
+                            *ngIf="checkWhereAgentIs(row,column)">
+                    </div>
+                    <div class="visitedWumpusDoors" *ngIf="checkDoorState(row,column)==='wumpus'">
+                        <img class="agent" src="../../assets/images/agnes-play.png" 
+                            *ngIf="checkWhereAgentIs(row,column)">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex;flex-direction: row;  margin-top:50px; margin-right: 40px; box-shadow:  rgb(201, 201, 233) 10px 10px 10px;margin-left: 40px;">
+           <p>Gold Left : {{goldCount - discoveredGold}}</p>
+           <p style ="margin-left:18px ;">Arrows Left : {{arrows}}</p>
+          
+        </div>
+    </div>
+    </div>
+    

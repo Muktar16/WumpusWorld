@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:wght@400;600;700;800;900&family=Poppins:wght@400;600;700&family=Ubuntu:wght@700&display=swap');
+
+.topnav {
+  background-color: rgb(36, 70, 104);
+  overflow: hidden;
+  
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 7px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #a1a9a6;
+  color: white;
+  background-image: url("../../assets/images/wall_grey.jpg");
+}
+h1 {
+  font-family: 'Helvetica';
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0b62c5;
+}
+
+h2 {
+  font-family: 'Helvetica';
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  color: #004089;
+}
+
+h3 {
+  font-family: 'Helvetica';
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+h4 {
+  font-family: 'Helvetica';
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#cheatHeading{
+  font-family: 'Helvetica';
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #224557;
+  margin: 20px 0 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.high{
+  display: flex;
+  flex-direction: column;
+}
+
+.boardBG {
+  
+  height: 700px;
+  width: 650px;
+  margin: 2% 0 0 10%;
+}
+
+.board {
+
+  margin: 10px auto;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cheatboardBG {
+  height: 450px;
+  width: 400px;
+  margin: 4% 0 0 8%;
+ 
+}
+
+.cheatboard {
+
+  margin: 10px auto;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+
+
+.doors,
+.visitedDoors,
+.visitedStenchDoors,
+.visitedBreezeDoors,
+.visitedPitDoors,
+.visitedGoldDoors,
+.visitedWumpusDoors,
+.killedWumpus{
+  height: 60px;
+  width: 55px;
+  margin: 1px 1px 1px 1px;
+  background-image: url('../../assets/images/wall_blue.jpg');
+  background-repeat: none;
+  background-size: cover;
+}
+
+.cheatSafedoors,
+.cheatBreezeDoors,
+.cheatStenchDoors,
+.cheatPitDoors,
+.cheatGoldDoors,
+.cheatWumpusDoors {
+  height: 35px;
+  width: 35px;
+  margin: 1px 1px 1px 1px;
+ 
+  background-repeat: none;
+  background-size: cover;
+}
+
+.visitedDoors {
+  background-image: url('../../assets/images/wall_grey.jpg');
+}
+.killedWumpus {
+  background-image: url('../../assets/images/kyle-grey-wall.jpg');
+}
+
+.visitedStenchDoors {
+  background-image: url('../../assets/images/wall-grey-stench.jpg');
+}
+
+.visitedBreezeDoors {
+  background-image: url('../../assets/images/wall-grey-breeze.jpg');
+}
+.visitedGoldDoors{
+  background-image: url('../../assets/images/gold-wall-grey.jpg');
+}
+
+.visitedPitDoors{
+  background-image: url('../../assets/images/pit-wall-grey.jpg');
+}
+
+.visitedWumpusDoors{
+  background-image: url('../../assets/images/kyle-grey-wall.jpg');
+}
+
+.cheatStenchDoors{
+  background-image: url('../../assets/images/wall-blue-stench.jpg');
+}
+
+.cheatBreezeDoors{
+  background-image: url('../../assets/images/breeze-wall-blue.jpg');
+}
+
+.cheatPitDoors{
+  background-image: url('../../assets/images/pit-wall-blue.jpg');
+}
+
+.cheatGoldDoors{
+  background-image: url('../../assets/images/gold-wall-blue.jpg');
+}
+
+.cheatWumpusDoors{
+  background-image: url('../../assets/images/kyle-blue-wall.jpg');
+  align-items: center;
+}
+
+.cheatSafedoors{
+  background-image: url('../../assets/images/wall_blue.jpg');
+}
+
+
+
+.agent {
+  height: 50px;
+  width: auto;
+  margin: 10px auto;
+}
+
+.cheatAgent {
+  height: 30px;
+  width: auto;
+  margin: 6px auto;
+}
+
+
+
+.leftThings{
+  margin: 5% 0 0 5%;
+}
+
+.collected{
+  display: flex;
+  flex-direction: row;
+  margin-left: 18%;
+  margin-top: 50%;
+  color:#171515
+}
+
+.collectedLines{
+  color: rgb(12, 12, 12);
+  margin: 5px 10px 0 5px;
+  font-weight: normal;
+}
+
+.githubButton{
+  background-color: #171515;
+  border: #171515;
+  padding-top: 5px;
+  margin: 20px 0 0 35%;
+}
+
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+.githubButton:active, .githubButton:hover{
+  background-color: #171515;
+  border: #171515;
+}
+
+svg{
+  margin-top: -3px;
+}
+
+.gameOver{
+  height: 100px;
+  width: 600px;
+  color: white;
+  z-index: 1;
+  margin: 20% 35%;
+  position: absolute;
+  background: rgba(40, 40, 40, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.3px);
+  -webkit-backdrop-filter: blur(6.3px);
+  border: 1px solid rgba(244, 248, 255, 0.52);
+  font-family: 'Helvetica';
+}
+#over{
+  font-size: 50px;
+  margin: 3% 0;
+  text-align: center;
+}
+
+.knowThings{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-left: 12%;
+  margin-top: -4%;
+  margin-bottom: -4%;
+}
+
+.know{
+  height: 50px;
+  width: auto;
+  margin: -5px 5px 0;
+}
+
+.knowInd{
+  width: 60px;
+  height: 60px;
+  margin-right: 7%;
+  text-align: center;
+}
+
+.knowText{
+  font-weight: normal;
+  font-size: 12px;
+  color: white;
+  margin-top: 10%;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 
+      0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}

@@ -1,0 +1,87 @@
+<div class="gameOver" [ngStyle]="{'visibility': gameOver? 'visible':'hidden'}">
+    <h3 id="over">{{gameOverLine}}</h3>
+</div>
+<div class="high">
+    <div class="topnav">
+        <a class="active" >Welcome to Wumpus World</a>
+       
+      </div> 
+
+       
+<div class="main">
+    
+    <div class="boardBG">
+        <div class="board">
+            <div class="tiles" *ngFor="let in of counter(10); let column = index">
+                <div class="tiles" *ngFor="let in of counter(10); let row = index">
+                    <div class="doors" *ngIf="checkDoorState(row,column)==='notvisited'">
+                        <img class="agent" src="../../assets/images/agnes-play.png"
+                            *ngIf="checkWhereAgentIs(row,column)">
+                    </div>
+                    <div class="visitedDoors" *ngIf="checkDoorState(row,column)==='safe'">
+                        <img class="agent" src="../../assets/images/agnes-play.png"
+                            *ngIf="checkWhereAgentIs(row,column)">
+                    </div>
+                    <div class="visitedStenchDoors" *ngIf="checkDoorState(row,column)==='stench'">
+                        <img class="agent" src="../../assets/images/agnes-play.png"
+                            *ngIf="checkWhereAgentIs(row,column)">
+                    </div>
+                    <div class="visitedBreezeDoors" *ngIf="checkDoorState(row,column)==='breeze'">
+                        <img class="agent" src="../../assets/images/agnes-play.png"
+                            *ngIf="checkWhereAgentIs(row,column)">
+                    </div>
+                    <div class="visitedPitDoors" *ngIf="checkDoorState(row,column)==='pit'">
+                        <img class="agent" src="../../assets/images/agnes-play.png"
+                            *ngIf="checkWhereAgentIs(row,column)">
+                    </div>
+                    <div class="visitedGoldDoors" *ngIf="checkDoorState(row,column)==='gold'">
+                        <img class="agent" src="../../assets/images/agnes-play.png " 
+                            *ngIf="checkWhereAgentIs(row,column)">
+                    </div>
+                    <div class="visitedWumpusDoors" *ngIf="checkDoorState(row,column)==='wumpus'">
+                        <img class="agent" src="../../assets/images/agnes-play.png" 
+                            *ngIf="checkWhereAgentIs(row,column)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="updates">
+        <!-- <div class="hudai" *ngFor="let in of counter(10); let column = index">
+        {{board[column]}}
+        </div> -->
+        <h4 id="cheatHeading">Behind the Scenes</h4>
+        <div class="cheatboardBG">
+            <div class="cheatboard">
+                <div class="cheattiles" *ngFor="let in of counter(10); let column = index">
+                    <div class="cheattiles" *ngFor="let in of counter(10); let row = index">
+                        <div class="cheatStenchDoors" *ngIf="checkCheatDoorState(row,column)==='stench'">
+                            <img class="cheatAgent" src="../../assets/images/agnes-play.png"
+                                *ngIf="checkWhereAgentIs(row,column)">
+                        </div>
+                        <div class="cheatPitDoors" *ngIf="checkCheatDoorState(row,column)==='pit'">
+                            <img class="cheatAgent" src="../../assets/images/agnes-play.png"
+                                *ngIf="checkWhereAgentIs(row,column)">
+                        </div>
+                        <div class="cheatGoldDoors" *ngIf="checkCheatDoorState(row,column)==='gold'">
+                            <img class="cheatAgent" src="../../assets/images/agnes-play.png"
+                                *ngIf="checkWhereAgentIs(row,column)">
+                        </div>
+                        <div class="cheatBreezeDoors" *ngIf="checkCheatDoorState(row,column)==='breeze'">
+                            <img class="cheatAgent" src="../../assets/images/agnes-play.png"
+                                *ngIf="checkWhereAgentIs(row,column)">
+                        </div>
+                        <div class="cheatWumpusDoors" *ngIf="checkCheatDoorState(row,column)==='wumpus'">
+                            <img class="cheatAgent" src="../../assets/images/agnes-play.png"
+                                *ngIf="checkWhereAgentIs(row,column)">
+                        </div>
+                        <div class="cheatSafedoors" *ngIf="checkCheatDoorState(row,column)==='safe'">
+                            <img class="cheatAgent" src="../../assets/images/agnes-play.png"
+                                *ngIf="checkWhereAgentIs(row,column)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
